@@ -22,6 +22,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install webdriver-manager
+          pip install pytest-html
 
       - name: Run Tests
         run: pytest --html=reports/test_report.html --self-contained-html
